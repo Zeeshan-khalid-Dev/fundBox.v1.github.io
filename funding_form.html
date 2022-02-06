@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funding Box</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-sm-8 col-md-6 col-lg-4 py-3">
+          <div class="card m-auto">
+            <div class="card-header">
+              <h1 class="funding__amount-needed-inner">
+                $ <span class="funding__remain-amount">300</span> still needed for this project
+              </h1>
+            </div>
+            <div class="funding__progress-bar">
+              <div class="funding__current-progress progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="card-body funding__give-section">
+              <p class="funding__days-left">
+                <strong
+                  ><span class="funding__text-highlight"
+                    >Only <span class="funding__days">0</span> days left</span
+                  ></strong
+                >
+                to fund this project.
+              </p>
+              <p>
+                Join the <b class="funding__donors">0</b> other donors who have already supported this
+                project. Every dollar helps.
+              </p>
+              <form class="funding__form" action="">
+                <span class="funding__dollar">&#36;</span>
+                <input class="funding__form-amount" type="number" name="amount" min="1" max="300" id="fundtext" value="0" />
+                <button class="funding__form-button btn btn btn-success" type="submit">Give Now</button>
+              </form>
+              <a href="javascript:void(0)" class="funding__link">Why give <span class="funding__amount"> $0 </span>?</a>
+            </div>
+            <div class="funding__footer-buttons">
+              <a class="funding__button button btn btn-outline-secondary" href="javascript:void(0)">Save for later</a>
+              <a class="funding__button button btn btn-outline-secondary" href="javascript:void(0)">Tell your friends</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/fund.js"></script>
+  </body>
+</html>
